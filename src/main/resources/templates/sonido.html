@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${titulo}"> </title>
+    <link rel="stylesheet" th:href="@{/css/style2.css}">
+
+    <!-- SoundManager --> 
+    <script type="text/javascript" th:src="@{/js/soundmanager2.js}"></script>
+    <script type="text/javascript" th:src="@{/js/SoundManager_PlayerButton.js}"></script>
+    <link rel="stylesheet" th:href="@{/css/SoundManager_PlayerButton.css}">    
+    <link rel="stylesheet" th:href="@{/css/SoundManager_flashblock.css}">
+</head>
+<body>
+    <div class="container">
+
+        
+
+    </div>
+
+    <div class="soundControl">
+        <a th:href="@{/audio/sonido.mp3}" class="sm2_button" title="sonido">play</a>
+    </div> 
+</body>
+</html>

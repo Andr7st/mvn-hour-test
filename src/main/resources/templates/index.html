@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title th:text="${titulo}"> </title>
+
+    <link rel="shortcut icon" th:href="@{/favicon/favicon.ico}" type="image/x-icon">
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57"   th:href="@{/favicon/apple-touch-icon-57x57.png}" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" th:href="@{/favicon/apple-touch-icon-114x114.png}" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"   th:href="@{/favicon/apple-touch-icon-72x72.png}" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" th:href="@{/favicon/apple-touch-icon-144x144.png}" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60"   th:href="@{/favicon/apple-touch-icon-60x60.png}" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" th:href="@{/favicon/apple-touch-icon-120x120.png}" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76"   th:href="@{/favicon/apple-touch-icon-76x76.png}" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" th:href="@{/favicon/apple-touch-icon-152x152.png}" />
+
+    <link rel="icon" type="image/png" th:href="@{/favicon/favicon-196x196.png}" sizes="196x196" />
+    <link rel="icon" type="image/png" th:href="@{/favicon/favicon-96x96.png}" sizes="96x96" />
+    <link rel="icon" type="image/png" th:href="@{/favicon/favicon-64x64.png}" sizes="64x64" />
+    <link rel="icon" type="image/png" th:href="@{/favicon/favicon-32x32.png}" sizes="32x32" />
+    <link rel="icon" type="image/png" th:href="@{/favicon/favicon-16x16.png}" sizes="16x16" />
+    <link rel="icon" type="image/png" th:href="@{/favicon/favicon-128.png}" sizes="128x128" />
+
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Andr7st" />
+    <meta property="og:description" content="Andrés Segura's test page" />
+    <meta property="og:image" content="https://raw.github.com/Andr7st/index/main/docs/favicon/image-og.png" />
+    <meta property="og:url" content="github.com/Andr7st/index" />
+    <meta property="og:site_name" content="Andr7st" />
+
+    <meta name="twitter:title" content="Andr7st/index" />
+    <meta name="twitter:description" content="Andrés Segura's test page" />
+    <meta name="twitter:image" content="https://raw.github.com/Andr7st/index/main/docs/favicon/image-tw.png" />
+    <meta name="twitter:site" content="@Andr7st" />
+    <meta name="twitter:creator" content="@ Andrés Segura" />
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+
+</head>
+<body>
+    <div id="horaColombia" hidden>
+        <span id="lblHora"      th:text="${hora}">     </span>
+        <span id="lblMinuto"    th:text="${minuto}">   </span>
+        <span id="lblSegundo"   th:text="${segundo}">  </span>
+        <span id="lblMeridiano" th:text="${meridiano}"></span>  
+    </div>
+    
+    
+    
+    <div class="container">
+        <h4 th:text="${saludo}"> </h4>
+        <p>My current time (es-co):</p>
+        <p>
+            <span id="hh"></span>:<span id="mm"></span>:<span id="ss"></span> <span id="pm"></span>
+        </p>
+    </div>
+
+    <script th:src="@{/js/script.js}"></script>
+</body>
+</html>

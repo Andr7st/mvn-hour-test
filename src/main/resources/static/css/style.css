@@ -1,0 +1,31 @@
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: oswald, helvetica, arial, sans-serif;
+	background:url(../images/lunar-eclipse.jpg), #000; /*Photo by <a href="https://freeimages.com/photographer/alitaylor-52272">Ali Taylor</a> from <a href="https://freeimages.com">FreeImages</a>*/
+	background-size: cover;
+	background-attachment:fixed;
+}
+
+.container {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+
+    margin-top: 14%;
+    padding: 1rem;
+
+    background-color: rgba(78, 78, 78, 0.74);
+    border: 2px solid rgb(255, 255, 255);
+    
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /*opacity: 0.4;*/
+}
